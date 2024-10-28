@@ -1,0 +1,13 @@
+{
+  "ids": {
+    "Movie": 7
+  },
+  "models": {
+    "Movie": {
+      "1": "{\"title\":\"Inception\",\"description\":\"A skilled thief is given a chance at redemption if he can successfully perform inception: planting an idea into a target's subconscious.\",\"releaseDate\":\"2024-10-28T05:06:00.000Z\",\"genre\":\"Science Fictions\",\"id\":1}",
+      "2": "{\"title\":\"The Shawshank Redemption\",\"description\":\"Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.\",\"releaseDate\":\"2024-10-28T05:10:00.000Z\",\"genre\":\"Drama\",\"id\":2}",
+      "4": "{\"title\":\"The Dark Knight\",\"description\":\"When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.\",\"releaseDate\":\"2024-10-28T05:49:00.000Z\",\"genre\":\"Action\",\"id\":4}",
+      "6": "{\"title\":\"Whispers in the Fog\",\"description\":\"A haunting tale of love and loss, set in a mysterious coastal town where the fog hides more than just secrets.\",\"releaseDate\":\"2024-10-28T11:31:08.594Z\",\"genre\":\"Mystery\",\"id\":6}"
+    }
+  }
+}

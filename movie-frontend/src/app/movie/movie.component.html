@@ -1,0 +1,38 @@
+<div class="movie-container">
+  <h2>Movie List</h2>
+
+  <form (ngSubmit)="editingMovieId ? saveMovie() : addMovie()">
+    <div class="form-row">
+      <div class="form-group">
+        <p>Movie Title</p>
+        <input [(ngModel)]="newMovie.title" name="title" placeholder="Title" required>
+      </div>
+      <div class="form-group">
+        <p>Description</p>
+        <input [(ngModel)]="newMovie.description" name="description" placeholder="Description">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <p>Release Date</p>
+        <input type="datetime-local" [(ngModel)]="newMovie.releaseDate" name="releaseDate" required>
+      </div>
+      <div class="form-group">
+        <p>Genre</p>
+        <input [(ngModel)]="newMovie.genre" name="genre" placeholder="Genre">
+      </div>
+    </div><br>
+    
+    <!-- Conditional buttons -->
+    <button type="submit" *ngIf="!editingMovieId">Add Movie</button>
+    <button type="submit" *ngIf="editingMovieId">Save Movie</button>
+  </form>
+  
+
+  <ul>
+    <li *ngFor="let movie of movies">
+      <strong><i style="padding-right: 10px;">{{ movie.title }}</i></strong> - {{ movie.description }} <i>({{ movie.releaseDate | date:'short' }})</i> <i style="padding-right: 10px;">[{{ movie.genre }}]</i>
+      <button class="edit-button" (click)="editMovie(movie)">Edit</button><button class="delete-button" (click)="deleteMovie(movie.id)">Delete</button>
+    </li>
+  </ul>
+</div>
